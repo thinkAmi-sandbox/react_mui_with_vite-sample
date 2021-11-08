@@ -1,0 +1,37 @@
+{
+  "name": "react_mui_with_vite",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@emotion/react": "^11.5.0",
+    "@mui/lab": "^5.0.0-alpha.53",
+    "@mui/material": "^5.0.6",
+    "@mui/styled-engine": "npm:@mui/styled-engine-sc@latest",
+    "@mui/styles": "^5.0.2",
+    "@mui/x-data-grid": "^5.0.0-beta.7",
+    "date-fns": "^2.25.0",
+    "history": "5",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "react-router-dom": "6.0.1",
+    "styled-components": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.6",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@vitejs/plugin-react": "^1.0.0",
+    "prettier": "^2.4.1",
+    "typescript": "^4.3.2",
+    "vite": "^2.6.4"
+  },
+  "resolutions": {
+    "@mui/styled-engine": "npm:@mui/styled-engine-sc@latest",
+    "styled-components": "^5"
+  }
+}
