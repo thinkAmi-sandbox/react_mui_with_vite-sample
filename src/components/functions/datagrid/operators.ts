@@ -1,10 +1,9 @@
 import {GridCellParams, GridFilterInputValue, GridFilterItem} from '@mui/x-data-grid'
-import isSameDay from 'date-fns/isSameDay'
-import * as React from 'react'
-import {isAfter, isBefore, max, min} from 'date-fns'
+import {isAfter, isBefore, isSameDay, max, min, parseISO} from 'date-fns'
 
 const toFilterValue = (filterItem: GridFilterItem) => {
   // 日付は '-' 区切りの文字列で渡されてくるので、フィルタで使えるように整形
+  return parseISO(filterItem.value)
   const values = filterItem.value.split('-')
   return new Date(values[0], values[1] - 1, values[2])
 }
