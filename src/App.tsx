@@ -8,11 +8,13 @@ import DataGridArrayInColumnWithValueFormatter from '@/components/pages/datagrid
 import DataGridArrayInColumnWithSortComparator from '@/components/pages/datagrid/DataGridArrayInColumnWithSortComparator'
 import DataGridArrayInColumnWithFilterError from '@/components/pages/datagrid/DataGridArrayInColumnWithFilterError'
 import DataGridArrayInColumnWithFilter from '@/components/pages/datagrid/DataGridArrayInColumnWithFilter'
+import FirstLayer from '@/components/pages/router_breadcrumbs/FirstLayer'
+import SecondLayer from '@/components/pages/router_breadcrumbs/SecondLayer'
+import ThirdLayer from '@/components/pages/router_breadcrumbs/ThirdLayer'
 
 function App() {
   return (
     <div className="App">
-      <h1>Welcome to React Router!</h1>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="datagrid">
@@ -23,6 +25,18 @@ function App() {
           <Route path="array-in-column-with-sort-comparator" element={<DataGridArrayInColumnWithSortComparator />} />
           <Route path="array-in-column-with-filter-error" element={<DataGridArrayInColumnWithFilterError />} />
           <Route path="array-in-column-with-filter" element={<DataGridArrayInColumnWithFilter />} />
+        </Route>
+
+        <Route path="router-breadcrumbs">
+          <Route path="1st">
+            <Route path="" element={<FirstLayer />} />
+            <Route path="2nd">
+              <Route path="" element={<SecondLayer />} />
+              <Route path="3rd">
+                <Route path="" element={<ThirdLayer />} />
+              </Route>
+            </Route>
+          </Route>
         </Route>
       </Routes>
     </div>

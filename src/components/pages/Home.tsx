@@ -35,6 +35,15 @@ const Component = (): JSX.Element => {
             </li>
           </ul>
         </div>
+
+        <div>
+          use-react-router-breadcrumbs
+          <ul>
+            <li>
+              <Link to="/router-breadcrumbs/first">First Layer</Link>
+            </li>
+          </ul>
+        </div>
       </nav>
     </>
   )
