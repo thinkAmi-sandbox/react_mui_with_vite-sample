@@ -11,6 +11,11 @@ import DataGridArrayInColumnWithFilter from '@/components/pages/datagrid/DataGri
 import FirstLayer from '@/components/pages/router_breadcrumbs/FirstLayer'
 import SecondLayer from '@/components/pages/router_breadcrumbs/SecondLayer'
 import ThirdLayer from '@/components/pages/router_breadcrumbs/ThirdLayer'
+import MuiLayout from '@/components/pages/mui_breadcrumbs/MuiLayout'
+import MuiFirstLayer from '@/components/pages/mui_breadcrumbs/MuiFirstLayer'
+import MuiThirdLayer from '@/components/pages/mui_breadcrumbs/MuiThirdLayer'
+import MuiSecondLayer from '@/components/pages/mui_breadcrumbs/MuiSecondLayer'
+import MuiTop from '@/components/pages/mui_breadcrumbs/MuiTop'
 
 function App() {
   return (
@@ -34,6 +39,19 @@ function App() {
               <Route path="" element={<SecondLayer />} />
               <Route path="3rd">
                 <Route path="" element={<ThirdLayer />} />
+              </Route>
+            </Route>
+          </Route>
+        </Route>
+
+        <Route path="mui-breadcrumbs" element={<MuiLayout />}>
+          <Route index element={<MuiTop />} />
+          <Route path="1st">
+            <Route index element={<MuiFirstLayer />} />
+            <Route path="2nd">
+              <Route index element={<MuiSecondLayer />} />
+              <Route path="3rd">
+                <Route index element={<MuiThirdLayer />} />
               </Route>
             </Route>
           </Route>
