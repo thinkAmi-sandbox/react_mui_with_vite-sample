@@ -16,6 +16,12 @@ import MuiFirstLayer from '@/components/pages/mui_breadcrumbs/MuiFirstLayer'
 import MuiThirdLayer from '@/components/pages/mui_breadcrumbs/MuiThirdLayer'
 import MuiSecondLayer from '@/components/pages/mui_breadcrumbs/MuiSecondLayer'
 import MuiTop from '@/components/pages/mui_breadcrumbs/MuiTop'
+import ParamsLayout from '@/components/pages/parameter_breadcrumbs/ParamsLayout'
+import ParamsTop from '@/components/pages/parameter_breadcrumbs/ParamsTop'
+import ParamsRootIndex from '@/components/pages/parameter_breadcrumbs/ParamsRootIndex'
+import ParamsRootDynamic from '@/components/pages/parameter_breadcrumbs/ParamsRootDynamic'
+import ParamsChildIndex from '@/components/pages/parameter_breadcrumbs/ParamsChildIndex'
+import ParamsChildDynamic from '@/components/pages/parameter_breadcrumbs/ParamsChildDynamic'
 
 function App() {
   return (
@@ -52,6 +58,20 @@ function App() {
               <Route index element={<MuiSecondLayer />} />
               <Route path="3rd">
                 <Route index element={<MuiThirdLayer />} />
+              </Route>
+            </Route>
+          </Route>
+        </Route>
+
+        <Route path="parameter-breadcrumbs" element={<ParamsLayout />}>
+          <Route index element={<ParamsTop />} />
+          <Route path="root">
+            <Route index element={<ParamsRootIndex />} />
+            <Route path=":rootId">
+              <Route index element={<ParamsRootDynamic />} />
+              <Route path="child">
+                <Route index element={<ParamsChildIndex />} />
+                <Route path=":childId" element={<ParamsChildDynamic />} />
               </Route>
             </Route>
           </Route>
