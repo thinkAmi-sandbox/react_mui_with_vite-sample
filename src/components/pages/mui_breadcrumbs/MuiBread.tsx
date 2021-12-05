@@ -34,7 +34,7 @@ const Component = (): JSX.Element => {
 
         // リンクの色を分かりやすくするため、サンプルとは color を変更
         return last ? (
-          <div>{breadcrumbNameMap[to]}</div>
+          <div key={to}>{breadcrumbNameMap[to]}</div>
         ) : (
           <LinkRouter underline="hover" color="primary" to={to} key={to}>
             {breadcrumbNameMap[to]}
