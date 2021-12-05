@@ -18,4 +18,4 @@
 - [React + MUI のDataGridにて、ある列が複数の日付を持つデータに対し、valueFormatter・sortComparator・filterModelを使って表示・ソート・フィルタしてみた - メモ的な思考的な](https://thinkami.hatenablog.com/entry/2021/11/08/230531)
 - [React + MUI DataGrid 用に作成した Custom Operator を、Jest + jest-mock-extended でテストしてみた - メモ的な思考的な](https://thinkami.hatenablog.com/entry/2021/11/27/233424)
 - [React + React Router v6 + use-react-router-breadcrumbs でパンくずリストを作ってみた - メモ的な思考的な](https://thinkami.hatenablog.com/entry/2021/12/02/232844)
-- [React + React Router v6 + MUI の Breadcrumbs でパンくずリストを作ってみた - メモ的な思考的な](https://thinkami.hatenablog.com/entry/2021/12/04/230517)
+- [React + React Router v6 + MUI の Breadcrumbs で、動的ルーティングを含むパンくずリストを作ってみた - メモ的な思考的な](https://thinkami.hatenablog.com/entry/2021/12/04/230517)
