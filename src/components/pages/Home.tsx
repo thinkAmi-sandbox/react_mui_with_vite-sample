@@ -1,5 +1,4 @@
-import {Link, Route} from 'react-router-dom'
-import DataGridArrayInColumnWithSortComparator from '@/components/pages/datagrid/DataGridArrayInColumnWithSortComparator'
+import {Link} from 'react-router-dom'
 import * as React from 'react'
 
 const Component = (): JSX.Element => {
@@ -37,10 +36,16 @@ const Component = (): JSX.Element => {
         </div>
 
         <div>
-          use-react-router-breadcrumbs
+          Breadcrumbs
           <ul>
             <li>
-              <Link to="/router-breadcrumbs/first">First Layer</Link>
+              <Link to="/router-breadcrumbs/1st">"use-react-router-breadcrumbs" version</Link>
+            </li>
+            <li>
+              <Link to="/mui-breadcrumbs">"MUI Breadcrumbs" version</Link>
+            </li>
+            <li>
+              <Link to="/parameter-breadcrumbs">"MUI Breadcrumbs" + "use-react-router-breadcrumbs" version</Link>
             </li>
           </ul>
         </div>
