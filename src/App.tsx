@@ -22,6 +22,7 @@ import ParamsRootIndex from '@/components/pages/parameter_breadcrumbs/ParamsRoot
 import ParamsRootDynamic from '@/components/pages/parameter_breadcrumbs/ParamsRootDynamic'
 import ParamsChildIndex from '@/components/pages/parameter_breadcrumbs/ParamsChildIndex'
 import ParamsChildDynamic from '@/components/pages/parameter_breadcrumbs/ParamsChildDynamic'
+import DataGridArrayInColumnWithLocale from '@/components/pages/datagrid/DataGridArrayInColumnWithLocale'
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           <Route path="array-in-column-with-sort-comparator" element={<DataGridArrayInColumnWithSortComparator />} />
           <Route path="array-in-column-with-filter-error" element={<DataGridArrayInColumnWithFilterError />} />
           <Route path="array-in-column-with-filter" element={<DataGridArrayInColumnWithFilter />} />
+          <Route path="array-in-column-with-locale" element={<DataGridArrayInColumnWithLocale />} />
         </Route>
 
         <Route path="router-breadcrumbs">

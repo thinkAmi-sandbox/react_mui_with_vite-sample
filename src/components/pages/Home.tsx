@@ -32,6 +32,9 @@ const Component = (): JSX.Element => {
             <li>
               <Link to="/datagrid/array-in-column-with-filter">Array in Column With Filter</Link>
             </li>
+            <li>
+              <Link to="/datagrid/array-in-column-with-locale">Array in Column With Locale</Link>
+            </li>
           </ul>
         </div>
 
