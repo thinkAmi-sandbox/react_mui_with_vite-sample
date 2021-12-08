@@ -19,3 +19,4 @@
 - [React + MUI DataGrid 用に作成した Custom Operator を、Jest + jest-mock-extended でテストしてみた - メモ的な思考的な](https://thinkami.hatenablog.com/entry/2021/11/27/233424)
 - [React + React Router v6 + use-react-router-breadcrumbs でパンくずリストを作ってみた - メモ的な思考的な](https://thinkami.hatenablog.com/entry/2021/12/02/232844)
 - [React + React Router v6 + MUI の Breadcrumbs で、動的ルーティングを含むパンくずリストを作ってみた - メモ的な思考的な](https://thinkami.hatenablog.com/entry/2021/12/04/230517)
+- [React + localeText 設定済の MUI DataGrid にて、フィルタ用 Custom Operator の value を標準の Operator と同じ値にすると、自動で翻訳される - メモ的な思考的な](https://thinkami.hatenablog.com/entry/2021/12/08/231851)
