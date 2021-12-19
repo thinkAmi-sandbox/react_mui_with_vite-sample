@@ -23,6 +23,15 @@ import ParamsRootDynamic from '@/components/pages/parameter_breadcrumbs/ParamsRo
 import ParamsChildIndex from '@/components/pages/parameter_breadcrumbs/ParamsChildIndex'
 import ParamsChildDynamic from '@/components/pages/parameter_breadcrumbs/ParamsChildDynamic'
 import DataGridArrayInColumnWithLocale from '@/components/pages/datagrid/DataGridArrayInColumnWithLocale'
+import DateTimePickerWithReactHookForm from '@/components/pages/datetime_picker_with_react_hook_form/DateTimePickerWithReactHookForm'
+import MuiModal from '@/components/pages/datetime_picker_with_react_hook_form/MuiModal'
+import MuiModalWithStyle from '@/components/pages/datetime_picker_with_react_hook_form/MuiModalWithStyle'
+import MuiModalWithReactHookForm from '@/components/pages/datetime_picker_with_react_hook_form/MuiModalWithReactHookForm'
+import LocalizationProviderInside from '@/components/pages/datetime_picker_with_react_hook_form/LocalizationProviderInside'
+import LocalizationProviderOutside from '@/components/pages/datetime_picker_with_react_hook_form/LocalizationProviderOutside'
+import LocalizationProviderOutsideWithLocale from '@/components/pages/datetime_picker_with_react_hook_form/LocalizationProviderOutsideWithLocale'
+import LocalizationProviderOutsideWithLocaleMaskInputFormat from '@/components/pages/datetime_picker_with_react_hook_form/LocalizationProviderOutsideWithLocaleMaskInputFormat'
+import LocalizationProviderOutsideWithLocaleMask from '@/components/pages/datetime_picker_with_react_hook_form/LocalizationProviderOutsideWithLocaleMask'
 
 function App() {
   return (
@@ -77,6 +86,21 @@ function App() {
               </Route>
             </Route>
           </Route>
+        </Route>
+
+        <Route path="datetime-picker-with-react-hook-form">
+          <Route index element={<DateTimePickerWithReactHookForm />} />
+          <Route path="modal" element={<MuiModal />} />
+          <Route path="modal-with-style" element={<MuiModalWithStyle />} />
+          <Route path="modal-with-react-hook-form" element={<MuiModalWithReactHookForm />} />
+          <Route path="inside" element={<LocalizationProviderInside />} />
+          <Route path="outside" element={<LocalizationProviderOutside />} />
+          <Route path="localization" element={<LocalizationProviderOutsideWithLocale />} />
+          <Route path="localization-with-mask" element={<LocalizationProviderOutsideWithLocaleMask />} />
+          <Route
+            path="localization-with-mask-format"
+            element={<LocalizationProviderOutsideWithLocaleMaskInputFormat />}
+          />
         </Route>
       </Routes>
     </div>
