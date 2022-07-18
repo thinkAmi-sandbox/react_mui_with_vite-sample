@@ -1,8 +1,9 @@
 import {Box, Button, Modal, TextField} from '@mui/material'
 import {useState} from 'react'
 import {Controller, SubmitHandler, useForm} from 'react-hook-form'
-import {DateTimePicker, LocalizationProvider} from '@mui/lab'
-import AdapterDateFns from '@mui/lab/AdapterDateFns'
+import {DateTimePicker} from '@mui/x-date-pickers/DateTimePicker'
+import {LocalizationProvider} from '@mui/x-date-pickers'
+import {AdapterDateFns} from '@mui/x-date-pickers/AdapterDateFns'
 import {ja} from 'date-fns/locale'
 
 const style = {
@@ -18,7 +19,7 @@ const style = {
 }
 
 type FormInput = {
-  inputValue: Date
+  inputValue: Date | null
 }
 
 const Component = (): JSX.Element => {
@@ -26,7 +27,7 @@ const Component = (): JSX.Element => {
   const handleOpen = () => setOpen(true)
   const handleClose = () => setOpen(false)
 
-  const {control, handleSubmit, setValue} = useForm()
+  const {control, handleSubmit, setValue} = useForm<FormInput>()
   const onSubmit: SubmitHandler<FormInput> = (data) => console.log(data)
 
   return (
@@ -35,7 +36,7 @@ const Component = (): JSX.Element => {
         Open
       </Button>
 
-      <LocalizationProvider dateAdapter={AdapterDateFns} locale={ja}>
+      <LocalizationProvider dateAdapter={AdapterDateFns} adapterLocale={ja}>
         <Modal open={open} onClose={handleClose}>
           <Box sx={style}>
             <form onSubmit={handleSubmit(onSubmit)}>

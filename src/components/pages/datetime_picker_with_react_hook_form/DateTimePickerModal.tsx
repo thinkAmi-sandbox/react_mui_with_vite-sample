@@ -1,7 +1,8 @@
 import {Controller, SubmitHandler, useForm} from 'react-hook-form'
 import {Box, Button, Modal, TextField} from '@mui/material'
-import {DateTimePicker, LocalizationProvider} from '@mui/lab'
-import AdapterDateFns from '@mui/lab/AdapterDateFns'
+import {DateTimePicker} from '@mui/x-date-pickers/DateTimePicker'
+import {LocalizationProvider} from '@mui/x-date-pickers'
+import {AdapterDateFns} from '@mui/x-date-pickers/AdapterDateFns'
 import {ja} from 'date-fns/locale'
 import {Dispatch, SetStateAction} from 'react'
 
@@ -39,7 +40,7 @@ const Component = ({open, handleClose, datetimeLabel, setDateTimeLabel}: Props):
 
   return (
     <>
-      <LocalizationProvider dateAdapter={AdapterDateFns} locale={ja}>
+      <LocalizationProvider dateAdapter={AdapterDateFns} adapterLocale={ja}>
         <Modal open={open} onClose={handleClose}>
           <Box sx={style}>
             <form onSubmit={handleSubmit(onSubmit)}>
