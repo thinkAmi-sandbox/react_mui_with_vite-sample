@@ -1,8 +1,9 @@
 import {Box, Button, Modal, TextField} from '@mui/material'
 import {useState} from 'react'
 import {Controller, SubmitHandler, useForm} from 'react-hook-form'
-import {DateTimePicker, LocalizationProvider} from '@mui/lab'
-import AdapterDateFns from '@mui/lab/AdapterDateFns'
+import {DateTimePicker} from '@mui/x-date-pickers/DateTimePicker'
+import {LocalizationProvider} from '@mui/x-date-pickers'
+import {AdapterDateFns} from '@mui/x-date-pickers/AdapterDateFns'
 import {ja} from 'date-fns/locale'
 
 const style = {
