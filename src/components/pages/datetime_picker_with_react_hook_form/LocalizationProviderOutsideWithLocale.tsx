@@ -27,7 +27,7 @@ const Component = (): JSX.Element => {
   const handleOpen = () => setOpen(true)
   const handleClose = () => setOpen(false)
 
-  const {control, handleSubmit, setValue} = useForm()
+  const {control, handleSubmit, setValue} = useForm<FormInput>()
   const onSubmit: SubmitHandler<FormInput> = (data) => console.log(data)
 
   return (
