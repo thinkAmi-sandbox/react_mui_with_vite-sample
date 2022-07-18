@@ -36,7 +36,7 @@ const Component = (): JSX.Element => {
         Open
       </Button>
 
-      <LocalizationProvider dateAdapter={AdapterDateFns} locale={ja}>
+      <LocalizationProvider dateAdapter={AdapterDateFns} adapterLocale={ja}>
         <Modal open={open} onClose={handleClose}>
           <Box sx={style}>
             <form onSubmit={handleSubmit(onSubmit)}>
