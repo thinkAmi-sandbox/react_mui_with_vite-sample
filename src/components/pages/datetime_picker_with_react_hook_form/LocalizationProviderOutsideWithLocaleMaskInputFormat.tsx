@@ -19,7 +19,7 @@ const style = {
 }
 
 type FormInput = {
-  inputValue: Date
+  inputValue: Date | null
 }
 
 const Component = (): JSX.Element => {
